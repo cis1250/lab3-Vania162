@@ -10,12 +10,8 @@
 while True:
   user_input = int(input("Enter number of terms of the Fibonacci sequence: "))
   
-  if user_input.isdigit():
-    num = int(user_input)
-    if num > 0:
-      break
-    else:
-      print("Please enter a positive integer.")
+  if num > 0:
+    break
   else:
     print("Please enter a positive integer.")
 
