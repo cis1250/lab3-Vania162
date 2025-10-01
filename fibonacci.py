@@ -24,10 +24,10 @@ a,b = 0, 1
 
 for i in range(n):
   if i == 0:
-    print(a, end='')
+    print(a, end=' ')
   elif i == 1:
-    print(b, end='')
+    print(b, end=' ')
   else:
     c = a + b
-    print (c, end='')
+    print (c, end=' ')
     a,b = b,c
