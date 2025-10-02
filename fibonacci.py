@@ -32,7 +32,7 @@ while True:
 
 
 
-print("Expected output: ")
+print("Expected output: ", end=' ')
     
 a,b = 0, 1
 
@@ -48,3 +48,5 @@ if num > 3:
     print(total, end=' ')
     a = b
     b = total
+
+print("\n")
