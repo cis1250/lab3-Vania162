@@ -34,4 +34,26 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
-    
+
+
+all_words_list = user_sentence.split()    
+
+
+list_words = []
+list_frequencies = []
+
+for word in all_words_list:
+    if word in list_words:
+        word_index = list_words.index(word)
+        list_frequencies[word_index] = list_frequencies[word_index] + 1
+        
+    else:
+        list_words.append(word)
+        list_frequencies.append(1)
+
+print("Input: ", "\"", user_sentence, "\"")
+print("Output: \n")
+
+
+for i in range(len(list_words)):
+    print(list_words[i], ": ", list_frequencies[i])
