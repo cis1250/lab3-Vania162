@@ -31,13 +31,17 @@ while True:
 
 a,b = 0, 1
 
-for i in range(n):
-  if i == 0:
-    print(a, end=' ')
-  elif i == 1:
-    print(b, end=' ')
-  else:
-    c = a + b
-    print (c, end=' ')
-    a,b = b,c
+if num >= 1:
+  print(a, " ")
+
+if num >= 2:
+  print(b, " ")
+
+if num > 3:
+  for i in range(3, num + 1):
+    total = a + b
+    print(total, " ")
+    a = b
+    b = total
+
 
