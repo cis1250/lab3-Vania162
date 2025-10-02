@@ -43,5 +43,3 @@ if num > 3:
     print(total, " ")
     a = b
     b = total
-
-
