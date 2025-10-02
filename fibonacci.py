@@ -18,6 +18,8 @@
 
 while True:
   user_input = input("Enter number of terms of the Fibonacci sequence: ")
+  print("User input: ", user_input)
+
   
   if user_input.isdigit():
     num = int(user_input)
@@ -29,17 +31,20 @@ while True:
     print("Please enter a positive integer.")
 
 
+
+print("Expected output: ")
+    
 a,b = 0, 1
 
 if num >= 1:
-  print(a, " ")
+  print(a, end=' ')
 
 if num >= 2:
-  print(b, " ")
+  print(b, end=' ')
 
 if num > 3:
   for i in range(3, num + 1):
     total = a + b
-    print(total, " ")
+    print(total, end=' ')
     a = b
     b = total
