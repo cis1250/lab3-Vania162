@@ -36,7 +36,7 @@ while (is_sentence(user_sentence) == False):
     user_sentence = input("Enter a sentence: ")
 
 
-all_words_list = user_sentence.split()    
+all_words_list = user_sentence.lower().split()    
 
 
 list_words = []
